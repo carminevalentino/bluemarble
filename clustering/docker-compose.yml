@@ -4,7 +4,7 @@ version: '2.1'
 
 services:
    master:
-      image: carminevalentino/geoserver:2.18.0
+      image: carminevalentino/geoserver-bluemarble:latest
       volumes:
          - ./geoserver_data:/opt/geoserver/data_dir
       ports:
@@ -25,7 +25,7 @@ services:
         timeout: 10s
         retries: 3
    node:
-      image: carminevalentino/geoserver:2.18.0
+      image: carminevalentino/geoserver-bluemarble:latest
       volumes:
          - ./geoserver_data:/opt/geoserver/data_dir
       ports:

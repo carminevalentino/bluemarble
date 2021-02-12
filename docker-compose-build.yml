@@ -10,9 +10,9 @@ services:
       build:
         context: .
         args:
-          IMAGE_VERSION: ${IMAGE_VERSION}
+          IMAGE_VERSION: latest
           JAVA_HOME: ${JAVA_HOME}
-          GS_VERSION: ${GS_VERSION}
+          GS_VERSION: latest
           WAR_URL: ${WAR_URL}
           ACTIVATE_ALL_STABLE_EXTENTIONS: ${ACTIVATE_ALL_STABLE_EXTENTIONS}
           ACTIVATE_ALL_COMMUNITY_EXTENTIONS: ${ACTIVATE_ALL_COMMUNITY_EXTENTIONS}
